@@ -1,0 +1,94 @@
+/* Site colour pallett contains standard 5 colours.
+ *
+ * #333232 - Jet - This is header background colour and hovered state of buttons
+ * #FFFFFF - White - This is the main background colour and text colour on Jet
+ * #087CA7 - CG Blue - Link colour when mouse hovers
+ * #C42021 - Lava - Link colour when mouse doesnt hovers
+ * #672713 - Liver Organ - This is for titles and bold items etc.
+ */
+$jetColour: #333232;
+$whiteColour: #ffffff;
+$CGBlueColour: #087ca7;
+$lavaColour: #c42021;
+$liverOrganColour: #672713;
+
+// Page properties
+$pageWidth: 1170px;
+
+// Font sizes
+$baseFontSize: 62.5%;
+$normalFontSize: 1.5rem;
+$mainHeadingFontSize: 2.6rem;
+$footerFontSize: 0.6rem;
+
+// Line Heights
+$baseLineHeight: 62.5%;
+$normalLineHeight: 2.1rem;
+$mainHeadingHeight: 3rem;
+
+// Font weights
+$normalFontWeight: 300;
+$boldFontWeight: 600;
+
+// Spacing
+$spacer10: 10px;
+$spacer20: 20px;
+
+// Font Family
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+// Tag styling
+a,
+a:visited {
+  color: $CGBlueColour;
+  text-decoration: none;
+}
+
+a:active,
+a:hover {
+  color: $lavaColour;
+}
+
+body {
+  color: $jetColour;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: $normalFontSize;
+  font-weight: $normalFontWeight;
+  line-height: $normalLineHeight;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $jetColour;
+  font-family: 'Permanent Marker', cursive;
+  margin: 0;
+}
+
+h2 {
+  font-size: $mainHeadingFontSize;
+  line-height: $mainHeadingHeight;
+}
+
+html {
+  font-size: $baseFontSize;
+  line-height: $baseLineHeight;
+}
+
+// Id styling
+
+#root {
+  min-width: $pageWidth;
+}
+
+#pageContent {
+  align-items: flex-start;
+  padding: 20px 0;
+  margin: 0 auto;
+  min-width: $pageWidth;
+  width: $pageWidth;
+}

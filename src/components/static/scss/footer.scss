@@ -1,0 +1,29 @@
+@import './common.scss';
+
+// Tag style
+footer {
+  height: 200px;
+  overflow-x: hidden;
+  width: 100%;
+  background-color: $jetColour;
+
+  // The text to be displayed wrapper
+  & span {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 0;
+    text-align: center;
+    width: inherit;
+
+    a,
+    a:visited {
+      color: $whiteColour;
+      font-family: 'Permanent Marker', Georgia;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: $lavaColour;
+    }
+  }
+}

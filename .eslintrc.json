@@ -1,0 +1,71 @@
+{
+  "env": {
+      "browser": true,
+      "es2021": true
+  },
+  "extends": [
+      "plugin:react/recommended",
+      "plugin:@typescript-eslint/recommended",
+      "google"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+      "ecmaFeatures": {
+          "jsx": true
+      },
+      "ecmaVersion": 12,
+      "sourceType": "module",
+      "project": "./tsconfig.json"
+  },
+  "plugins": [
+      "react",
+      "import",
+      "@typescript-eslint"
+  ],
+  "rules": {
+      "object-curly-spacing": ["error", "always"],
+      "object-curly-newline": ["error", {
+          "ImportDeclaration": {
+            "minProperties": 2, 
+            "multiline": true
+          }
+        }
+      ],
+      "require-jsdoc": "off",
+      "array-bracket-newline": "error",
+      "comma-dangle": "error",
+      "comma-spacing": "error",
+      "eol-last": "error",
+      "max-len": ["error", {
+              "code": 100,
+              "tabWidth": 2,
+              "ignoreComments": true,
+              "ignoreUrls": true
+          }
+      ],
+      "import/order": [
+        "error",
+        {
+          "alphabetize": {
+            "order": "asc",
+            "caseInsensitive": true
+          },
+          "newlines-between": "always",
+          "groups": ["builtin", "external", "parent", "sibling", "index"],
+          "pathGroups": [
+            {
+              "pattern": "react",
+              "group": "external",
+              "position": "before"
+            }
+          ],
+          "pathGroupsExcludedImportTypes": ["builtin"]
+        }
+      ]
+  },
+  "settings": {
+      "react": {
+          "version": "detect"
+      }
+  }
+}

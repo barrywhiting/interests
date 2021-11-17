@@ -62,7 +62,7 @@ const About = (): JSX.Element => {
         print and view the pages in a nicer richer format.
       </p>
       <p>
-        I then received a phone call from an agent explaining they had seen my details on <a href="https://www.linkedin.com">linedin</a>
+        I then received a phone call from an agent explaining they had seen my details on <a href="https://www.linkedin.com">linkedin</a>
         <span> </span>and would like to pass my details to <a href="https://en.wikipedia.org/wiki/LoveFilm">Lovefilm</a> and would this be ok.
         The next thing I know I was starting work in the new <a href="https://www.amazon.co.uk">Amazon</a> streaming video service
         offices in London. <a href="https://en.wikipedia.org/wiki/LoveFilm">Lovefilm</a> had hired me but by the time I had finished my 3
